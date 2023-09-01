@@ -7,15 +7,26 @@
 	body {
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
 	}
 	
-	table {
-		border: darkblue;
+	.titulo {
+		display: flex;
+		justify-content: center;
 	}
+	
+	.tabla {
+		display: flex;
+		justify-content: center;
+	}
+	
 </style>
 <body>
-    <h1>Lista de Muebles</h1>
-    <table>
+	<div class="titulo">
+		<h1>Lista de Muebles</h1>
+	</div>
+	<div class="tabla">
+		<table>
         <tr>
             <th>ID</th>
             <th>Nombre</th>
@@ -37,5 +48,6 @@
             <td th:text="${mueble.cantidadPatas}"></td>
         </tr>
     </table>
+	</div>    
 </body>
 </html>
