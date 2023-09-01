@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Muebles</title>
+</head>
+<body>
+    <h1>Lista de Muebles</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Material</th>
+            <th>Color</th>
+            <th>Textura</th>
+            <th>Altura</th>
+            <th>Ancho</th>
+            <th>Cantidad de patas</th>
+        </tr>
+        <tr th:each="mueble : ${muebles}">
+            <td th:text="${mueble.id}"></td>
+            <td th:text="${mueble.nombre}"></td>
+            <td th:text="${mueble.material}"></td>
+            <td th:text="${mueble.color}"></td>
+            <td th:text="${mueble.textura}"></td>
+            <td th:text="${mueble.altura}"></td>
+            <td th:text="${mueble.ancho}"></td>
+            <td th:text="${mueble.cantidadPatas}"></td>
+        </tr>
+    </table>
+</body>
+</html>
