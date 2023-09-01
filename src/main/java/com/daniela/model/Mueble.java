@@ -18,14 +18,14 @@ public class Mueble {
 	private String textura;
 	private double altura;
 	private double ancho;
-	private int cantPatas;
+	private int cantidadPatas;
 	
 	public Mueble() {
 		super();
 	}
 
 	public Mueble(int id, String nombre, String material, String color, String textura, double altura, double ancho,
-			int cantPatas) {
+			int cantidadPatas) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
@@ -34,7 +34,7 @@ public class Mueble {
 		this.textura = textura;
 		this.altura = altura;
 		this.ancho = ancho;
-		this.cantPatas = cantPatas;
+		this.cantidadPatas = cantidadPatas;
 	}
 
 	public int getId() {
@@ -93,12 +93,12 @@ public class Mueble {
 		this.ancho = ancho;
 	}
 
-	public int getCantPatas() {
-		return cantPatas;
+	public int getCantidadPatas() {
+		return cantidadPatas;
 	}
 
-	public void setCantPatas(int cantPatas) {
-		this.cantPatas = cantPatas;
+	public void setCantidadPatas(int cantidadPatas) {
+		this.cantidadPatas = cantidadPatas;
 	}
 	
 }
